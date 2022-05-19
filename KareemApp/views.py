@@ -7,3 +7,9 @@ def login(request):
 
 def registrasi(request):
     return render(request, 'registrasi.html')
+
+def amalanku(request):
+    return render(request, 'amalanku.html')
+
+def landingpage(request):
+    return render(request, 'landingpage.html')
