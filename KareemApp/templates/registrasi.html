@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<body class="body-bg">
+
+    <div id="regis">
+        <h3> Registrasi </h3>
+    </div>
+
+    <form>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Nama Lengkap">
+            <label for="floatingInput">Nama Lengkap</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Username">
+            <label for="floatingPassword">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Konfirmasi Password">
+            <label for="floatingPassword">Konfirmasi Password</label>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto mb-3">
+            <button id="login-btn" class="btn" type="button">Registrasi</button>
+            
+        </div>
+
+        <div class="d-grid gap-2 col-7 mx-auto mb-3">
+            <p>Already a member? 
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+    </form>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+{% endblock %}

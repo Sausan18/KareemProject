@@ -1,0 +1,73 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body.body-bg {
+    background-image: url("../img/Login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.body-c {
+    background-color: #E5E5E5;
+}
+
+form {
+    position: absolute;
+    left: 3.04%;
+    right: 57.74%;
+    top: 38.59%;
+    bottom: 42.06%;
+}
+
+#login {
+    position: absolute;
+        left: 13.89%;
+        right: 66.53%;
+        top: 28.31%;
+        bottom: 66.29%;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 52px;
+        /* identical to box height */
+    
+        text-align: center;
+        letter-spacing: 0.1em;
+    
+        color: #000000;
+}
+
+#regis {
+    position: absolute;
+        left: 17.39%;
+        right: 70.9%;
+        top: 28%;
+        bottom: 66.4%;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 52px;
+        letter-spacing: 0.1em;
+    
+        color: #000000;
+}
+
+#login-btn{
+
+    background: #DD4A48;
+        border-radius: 30px;
+
+}
+
+#regis-btn {
+
+    background: #DD4A48;
+    border-radius: 30px;
+
+}
