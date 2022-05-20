@@ -27,3 +27,17 @@ a {
     text-decoration: none;
     color: black;
 }
+
+#con-1 {
+    position: absolute;
+    width: 368px;
+    height: 455px;
+    left: 490px;
+    top: 423px;
+
+    /* Colors/Primary White */
+
+    background: #812727;
+    box-shadow: -10px 56px 140px rgba(143, 155, 186, 0.2);
+    border-radius: 16px;
+}

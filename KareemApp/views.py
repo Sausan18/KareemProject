@@ -13,3 +13,6 @@ def amalanku(request):
 
 def landingpage(request):
     return render(request, 'landingpage.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')

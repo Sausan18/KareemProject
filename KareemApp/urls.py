@@ -10,4 +10,5 @@ urlpatterns = [
     re_path(r'^registrasi', views.registrasi),
     re_path(r'^amalanku', views.amalanku),
     re_path(r'^landingpage', views.landingpage),
+    re_path(r'^dashboard', views.dashboard),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
