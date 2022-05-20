@@ -9,7 +9,16 @@
         <h3> Registrasi </h3>
     </div>
 
-    <form>
+    {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'error' %}
+        <div class="alert alert-danger mt-3">{{ message }}</div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    <form action="/registrasi" method="POST">
+        {% csrf_token %}
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="Nama Lengkap" name="nama">
             <label for="floatingInput">Nama Lengkap</label>
@@ -28,12 +37,12 @@
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto mb-3">
-            <button id="regis-btn" class="btn" type="button">Registrasi</button>
+            <button id="regis-btn" class="btn" type="submit">Registrasi</button>
         </div>
 
         <div class="d-grid gap-2 col-7 mx-auto mb-3">
             <p>Already a member? 
-                <a href="login.html">Login</a>
+                <a href="/login">Login</a>
             </p>
         </div>
     </form>

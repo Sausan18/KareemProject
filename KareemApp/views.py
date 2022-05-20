@@ -24,6 +24,7 @@ def login(request):
             return redirect('/login')
 
         request.session['user_id'] = user.user_id
+        return redirect('/dashboard')
 
 
 def registrasi(request):

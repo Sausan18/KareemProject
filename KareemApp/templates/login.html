@@ -7,8 +7,20 @@
     <div id="login">
         <h3> Login </h3>
     </div>
+    {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'error' %}
+        <div class="alert alert-danger mt-3">{{ message }}</div>
+    {% endif %}
+
+    {% if message.tags == 'success' %}
+        <div class="alert alert-success mt-3">{{ message }}</div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
     <!-- Login Form -->
-    <form>
+    <form action="/login" method="POST">
+        {% csrf_token %}
         <div class="mb-3">
             <label for="exampleInputEmail1" name="username" class="form-label">Username</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -18,11 +30,11 @@
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="d-grid gap-2 col-6 mx-auto mb-3">
-            <button id="login-btn" class="btn" type="button">Login</button>
+            <button id="login-btn" class="btn" type="submit">Login</button>
         </div>
 
         <div class="d-grid gap-2 col-7 mx-auto mb-3">
-            <p>Not registered yet? <a href="registrasi.html">Create an Account</a>
+            <p>Not registered yet? <a href="/registrasi">Create an Account</a>
             </p>
         </div>
     </form>
