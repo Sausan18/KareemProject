@@ -1,10 +1,1131 @@
-{% extends 'base.html' %}
+{% extends 'sidebar.html' %}
 
 {% block content %}
 {% load static %}
 
-<body class="body-c">
-    <table class="table table-borderless">
+    <!-- <div id="list amalan" class="">
+        <div id="m-1">
+            <h3>Minggu 1</h3>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Amalan</th>
+                        <th scope="col">Hari-1</th>
+                        <th scope="col">Hari-2</th>
+                        <th scope="col">Hari-3</th>
+                        <th scope="col">Hari-4</th>
+                        <th scope="col">Hari-5</th>
+                        <th scope="col">Hari-6</th>
+                        <th scope="col">Hari-7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dhuha</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tadarus</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarawih</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ziyadah</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Puasa</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="m-2">
+            <h3>Minggu 2</h3>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Amalan</th>
+                        <th scope="col">Hari-1</th>
+                        <th scope="col">Hari-2</th>
+                        <th scope="col">Hari-3</th>
+                        <th scope="col">Hari-4</th>
+                        <th scope="col">Hari-5</th>
+                        <th scope="col">Hari-6</th>
+                        <th scope="col">Hari-7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dhuha</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tadarus</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarawih</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ziyadah</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Puasa</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="m-3">
+            <h3>Minggu 3</h3>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Amalan</th>
+                        <th scope="col">Hari-1</th>
+                        <th scope="col">Hari-2</th>
+                        <th scope="col">Hari-3</th>
+                        <th scope="col">Hari-4</th>
+                        <th scope="col">Hari-5</th>
+                        <th scope="col">Hari-6</th>
+                        <th scope="col">Hari-7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dhuha</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tadarus</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarawih</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ziyadah</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Puasa</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="m-4">
+            <h3>Minggu 4</h3>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Amalan</th>
+                        <th scope="col">Hari-1</th>
+                        <th scope="col">Hari-2</th>
+                        <th scope="col">Hari-3</th>
+                        <th scope="col">Hari-4</th>
+                        <th scope="col">Hari-5</th>
+                        <th scope="col">Hari-6</th>
+                        <th scope="col">Hari-7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dhuha</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tadarus</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarawih</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ziyadah</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Puasa</th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+
+
+    <div id="m-1">
+        <h3>Minggu 1</h3>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Amalan</th>
+                    <th scope="col">Hari-1</th>
+                    <th scope="col">Hari-2</th>
+                    <th scope="col">Hari-3</th>
+                    <th scope="col">Hari-4</th>
+                    <th scope="col">Hari-5</th>
+                    <th scope="col">Hari-6</th>
+                    <th scope="col">Hari-7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dhuha</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tadarus</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tarawih</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ziyadah</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Puasa</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="m-2">
+        <h3>Minggu 2</h3>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Amalan</th>
+                    <th scope="col">Hari-1</th>
+                    <th scope="col">Hari-2</th>
+                    <th scope="col">Hari-3</th>
+                    <th scope="col">Hari-4</th>
+                    <th scope="col">Hari-5</th>
+                    <th scope="col">Hari-6</th>
+                    <th scope="col">Hari-7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dhuha</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tadarus</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tarawih</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ziyadah</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Puasa</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="m-3">
+        <h3>Minggu 3</h3>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Amalan</th>
+                    <th scope="col">Hari-1</th>
+                    <th scope="col">Hari-2</th>
+                    <th scope="col">Hari-3</th>
+                    <th scope="col">Hari-4</th>
+                    <th scope="col">Hari-5</th>
+                    <th scope="col">Hari-6</th>
+                    <th scope="col">Hari-7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dhuha</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tadarus</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tarawih</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ziyadah</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Puasa</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="m-4">
+        <h3>Minggu 4</h3>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Amalan</th>
+                    <th scope="col">Hari-1</th>
+                    <th scope="col">Hari-2</th>
+                    <th scope="col">Hari-3</th>
+                    <th scope="col">Hari-4</th>
+                    <th scope="col">Hari-5</th>
+                    <th scope="col">Hari-6</th>
+                    <th scope="col">Hari-7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dhuha</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tadarus</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Tarawih</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ziyadah</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Puasa</th>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <table class="table table-borderless">
         <thead>
             <tr>
                 <th scope="col">Amalan</th>
@@ -139,7 +1260,7 @@
                 </td>
             </tr>
         </tbody>
-    </table>
-</body>
+    </table>  -->
+
 
 {% endblock %}
