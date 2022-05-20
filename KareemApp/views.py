@@ -16,3 +16,6 @@ def landingpage(request):
 
 def dashboard(request):
     return render(request, 'dashboard.html')
+
+def foodrekom(request):
+    return render(request, 'foodrekom.html')
