@@ -71,3 +71,95 @@ form {
     border-radius: 30px;
 
 }
+
+/* colors
+ #ED1C5B; light 
+ #E20E4E; dark
+*/
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar start here  */
+.sidebar{
+    position: fixed;
+    background: #C0D8C0;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar h2{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    background: #C0D8C0;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+.sidebar ul li {
+    margin: 25px 0;
+}
+
+.sidebar ul li a{
+    color: black;
+    padding: 0 30px;
+
+}
+.sidebar ul li a:hover{
+    color: #000000;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+/* Sidebar end Here  */
+
+/* Main Content Section Start Here  */
+
+.main{
+    margin-left: 200px;
+    padding: 5px;
+}
+
+.main h2{
+    margin-top: 20px;
+}
+
+.progress {
+    width: 835px;
+height: 29px;
+
+/* Progress Container */
+
+background: #3C3056;
+border-radius: 1000px;
+}
+
+.service-list {
+    list-style-type: none;
+    margin-left:0px;
+    padding-left:0px;
+    float: left;
+    display: inline-block;
+}
+
+
+.service-list p {
+    text-align: right; 
+    margin: 0; 
+    padding: 0;
+}
