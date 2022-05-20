@@ -10,14 +10,9 @@ class Users(models.Model):
     password = models.CharField(max_length=500)
 
 
-class Amalan(models.Model):
-    amalan_id = models.AutoField(primary_key=True)
-    nama_amalan = models.CharField(max_length=500)
-
-
 class Aktivitas(models.Model):
     aktivitas_id = models.AutoField(primary_key=True)
     kode_jadwal = models.CharField(max_length=500)
     status = models.CharField(max_length=500)
-    amalan = models.IntegerField()
+    amalan = models.CharField(max_length=500)
     user = models.IntegerField()
