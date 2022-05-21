@@ -63,7 +63,10 @@ def registrasi(request):
 
 
 def amalanku(request):
-    return render(request, 'amalanku.html')
+    if request.method == 'GET' :
+        id = request.session['user_id']
+        nama = Users.objects.get(user_id = id).nama
+        return render(request, 'amalanku.html', {'nama': nama})
 
 
 def landingpage(request):
@@ -71,13 +74,19 @@ def landingpage(request):
 
 
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    if request.method == 'GET' :
+        id = request.session['user_id']
+        nama = Users.objects.get(user_id = id).nama
+        return render(request, 'dashboard.html', {'nama': nama})
 
 
 def foodrekom(request):
-    return render(request, 'foodrekom.html')
+    if request.method == 'GET' :
+        id = request.session['user_id']
+        nama = Users.objects.get(user_id = id).nama
+        return render(request, 'foodrekom.html', {'nama': nama})
 
 
-def logout(request):
+def logoutUser(request):
     logout(request)
     return redirect('/login')
