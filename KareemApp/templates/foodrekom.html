@@ -38,14 +38,43 @@
             </a>
           </li>
           <li>
-            <a href="#" style="text-decoration: none;">
+            <a href="{% url 'logout' %}" style="text-decoration: none;">
                 <img src="https://img.icons8.com/fluency-systems-regular/24/000000/exit.png" />
               <span>Logout</span>
             </a>
           </li>
         </ul>
       </div>
-      <p class="lead fw-bold" style="font-size: 20px; margin-left: 230px; margin-top: 50px;" >Main Course</p>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+                <span class="navbar-text    " style="text-align: center;">
+
+                    <img id="avatar" src="{% static 'img/avatar.png' %}" alt="Avatar">
+                    <p>{{nama}}</p>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+      <p class="lead fw-bold" style="font-size: 20px; margin-left: 230px; margin-top: 10px;" >Main Course</p>
       <ul>
         <li class="service-list" style="margin-left: 200px;">
             <a ><img src="static/img/asam-keueng.jpg" alt="icon" class="alignnone size-full wp-image-156" style="width: 200px;"/></a>

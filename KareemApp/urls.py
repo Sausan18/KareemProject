@@ -7,6 +7,7 @@ from django.conf import settings
 urlpatterns = [
     re_path(r'^$', views.landingpage),
     re_path(r'^login', views.login, name='login'),
+    re_path(r'^logout', views.logoutUser, name='logout'),
     re_path(r'^registrasi', views.registrasi),
     re_path(r'^amalanku', views.amalanku),
     re_path(r'^landingpage', views.landingpage),
